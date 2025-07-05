@@ -1,0 +1,101 @@
+.main-banner {
+    padding: 205px 70px 90px;
+    display: flex;
+    flex-direction: column;
+
+    .banner-content {
+        width: 50%;
+        margin-bottom: 95px;
+
+        .page-title {
+            font-size: 116px;
+            margin-bottom: 30px;
+        }
+
+        .page-subtitle {
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 55px;
+        }
+
+        .icon-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 55px 75px;
+
+            .icon-item {
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                text-align: center;
+
+                .icon {
+                    display: block;
+                    width: 64px;
+                    height: 64px;
+
+                    &.globe-icon {
+                        background-image: url("../../img/icons/Globe.svg");
+                    }
+
+                    &.droplet-icon {
+                        background-image: url("../../img/icons/Droplet.svg");
+                    }
+
+                    &.shield-icon {
+                        background-image: url("../../img/icons/Shield.svg");
+                    }
+
+                    &.clock-icon {
+                        background-image: url("../../img/icons/Clock.svg");
+                    }
+
+                    &.users-icon {
+                        background-image: url("../../img/icons/Users.svg");
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        margin-bottom: 15px;
+
+        p {
+            max-width: 360px;
+        }
+    }
+
+    .button {
+        align-self: center;
+    }
+}
+
+.video-section {
+    text-align: center;
+
+    .video-title {
+        font-size: 67px;
+        margin-bottom: 45px;
+    }
+
+    .video-player {
+        display: block;
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .video-description {
+        margin: 15px auto 50px;
+    }
+}

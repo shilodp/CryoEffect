@@ -1,0 +1,132 @@
+.contacts-section {
+    padding: 75px 150px;
+
+    .contacts-title {
+        font-size: 70px;
+        margin-bottom: 70px;
+    }
+
+    .contacts-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .contact-block {
+        flex: 1 0 35%;
+        display: flex;
+
+        &.numbers {
+            flex-direction: column;
+            gap: 10px;
+
+            .icon {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+
+                &.whatsapp {
+                    background-image: url("../../img/icons/Whatsapp.svg");
+                }
+
+                &.phone {
+                    background-image: url("../../img/icons/Phone.svg");
+                }
+            }
+
+            .number {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                font-size: 18px;
+            }
+
+            a:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+
+        &.subscribe {
+            justify-content: flex-end;
+
+            form {
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                border-radius: 16px;
+                padding: 5px;
+                height: 75px;
+                display: flex;
+                gap: 10px;
+
+                input {
+                    height: 100%;
+                    flex: 1 0 0;
+                    border-radius: 16px;
+                    border: none;
+                    background-color: transparent;
+                    outline: none;
+                    color: #fff;
+                    font-size: 22px;
+                    padding: 17px;
+
+                    &::placeholder {
+                        color: #fff;
+                    }
+                }
+
+                button {
+                    height: 100%;
+                    padding: 16px 32px;
+                    flex: 0 0 150px;
+                    border-radius: 16px;
+                    border: none;
+                    background-color: #fff;
+                    color: #000;
+                    font-size: 22px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &.copyright {
+            align-items: flex-end;
+            font-size: 19px;
+            opacity: 32%;
+        }
+
+        &.social-icons {
+            justify-content: flex-end;
+            display: flex;
+            gap: 22px;
+            order: 4;
+
+            a {
+                display: inline-block;
+                width: 54px;
+                height: 54px;
+            }
+
+            .icon {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                &.telegram {
+                    background-image: url("../../img/icons/Telegram.svg");
+                }
+
+                &.wechat {
+                    background-image: url("../../img/icons/Wechat.svg");
+                }
+
+                &.email {
+                    background-image: url("../../img/icons/Email.svg");
+                }
+            }
+        }
+    }
+}

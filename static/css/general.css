@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+    background: #000;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+body {
+    background-image: url("../../img/background/Group\ 1.png"),
+        url("../../img/background/Group\ 3.png"),
+        url("../../img/background/Group\ 4.png");
+    background-position: center top, center center, center bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+
+    b {
+        font-weight: 700;
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7371e5;
+    font-size: 30px;
+    border: none;
+    border-radius: 77px;
+    height: 99px;
+    width: auto;
+    padding: 30px;
+}

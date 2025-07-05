@@ -1,0 +1,42 @@
+.our-team {
+    .team-text {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 150px 90px;
+
+        > * {
+            width: calc(50% - 125px);
+        }
+
+        .team-title {
+            font-size: 70px;
+            margin-bottom: 35px;
+        }
+    }
+
+    .team-slider {
+        .team-member {
+            width: 285px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .slick-prev {
+            left: 70px;
+            z-index: 100;
+        }
+
+        .slick-next {
+            right: 70px;
+            z-index: 100;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-size: 40px;
+        }
+    }
+}
