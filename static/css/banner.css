@@ -35,27 +35,7 @@
                 .icon {
                     display: block;
                     width: 64px;
-                    height: 64px;
-
-                    &.globe-icon {
-                        background-image: url("../../img/icons/Globe.svg");
-                    }
-
-                    &.droplet-icon {
-                        background-image: url("../../img/icons/Droplet.svg");
-                    }
-
-                    &.shield-icon {
-                        background-image: url("../../img/icons/Shield.svg");
-                    }
-
-                    &.clock-icon {
-                        background-image: url("../../img/icons/Clock.svg");
-                    }
-
-                    &.users-icon {
-                        background-image: url("../../img/icons/Users.svg");
-                    }
+                    height: auto;
                 }
             }
         }

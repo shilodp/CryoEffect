@@ -48,7 +48,7 @@
 
         textarea {
             min-height: 80px;
-            width: 100%;
+            width: 100% !important;
         }
 
         input {

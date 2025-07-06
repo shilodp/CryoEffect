@@ -113,19 +113,7 @@
             .icon {
                 display: block;
                 width: 100%;
-                height: 100%;
-
-                &.telegram {
-                    background-image: url("../../img/icons/Telegram.svg");
-                }
-
-                &.wechat {
-                    background-image: url("../../img/icons/Wechat.svg");
-                }
-
-                &.email {
-                    background-image: url("../../img/icons/Email.svg");
-                }
+                height: auto;
             }
         }
     }
