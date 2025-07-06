@@ -49,3 +49,27 @@ h3 {
     width: auto;
     padding: 30px;
 }
+
+.rtl {
+    .banner-content {
+        align-self: flex-end;
+    }
+
+    .gallery-section {
+        flex-direction: row-reverse;
+    }
+
+    .slick-prev {
+        left: unset !important;
+        right: 70px !important;
+    }
+
+    .slick-next {
+        left: 70px !important;
+        right: unset !important;
+    }
+
+    .number {
+        flex-direction: row-reverse !important;
+    }
+}

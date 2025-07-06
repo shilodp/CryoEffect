@@ -17,6 +17,7 @@
     .team-slider {
         .team-member {
             width: 285px;
+            margin-left: 50px;
 
             img {
                 width: 100%;

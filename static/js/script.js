@@ -22,4 +22,5 @@ $(".team-slider").slick({
     dots: false,
     infinite: true,
     variableWidth: true,
+    centerMode: true,
 });

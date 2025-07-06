@@ -4,7 +4,7 @@
     padding: 30px 150px;
 
     .about-text {
-        flex: 0 0 calc(50% - 125px);
+        width: calc(50% - 125px);
 
         .about-title {
             font-size: 70px;
@@ -21,7 +21,7 @@
     }
 
     .contact-form {
-        flex: 0 0 calc(50% - 125px);
+        width: calc(50% - 125px);
         position: sticky;
         top: 130px;
         height: fit-content;
