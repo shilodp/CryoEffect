@@ -14,9 +14,9 @@ html {
 }
 
 body {
-    background-image: url("../../img/background/Group\ 1.png"),
-        url("../../img/background/Group\ 3.png"),
-        url("../../img/background/Group\ 4.png");
+    background-image: url("img/background/Group\ 1.png"),
+        url("img/background/Group\ 3.png"),
+        url("background/Group\ 4.png");
     background-position: center top, center center, center bottom;
     background-repeat: no-repeat, no-repeat, no-repeat;
 }
