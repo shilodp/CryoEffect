@@ -13,7 +13,6 @@ $(".gallery-slider").slick({
     arrows: false,
     dots: true,
     infinite: true,
-    variableWidth: true,
 });
 
 $(".team-slider").slick({

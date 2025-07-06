@@ -1,16 +1,34 @@
 .our-team {
+    --team--padding: 30px 20px 40px;
+    --team--width: 100%;
+    --team-title--margin-bottom: 25px;
+
+    @media (min-width: 1024px) {
+        --team--padding: 30px 75px 50px;
+        --team--width: calc(50% - 50px);
+        --team-title--margin-bottom: 35px;
+    }
+
+    @media (min-width: 1440px) {
+        --team--padding: 30px 150px 70px;
+        --team--width: calc(50% - 125px);
+        --team-title--margin-bottom: 50px;
+    }
+}
+
+.our-team {
     .team-text {
         display: flex;
         flex-direction: column;
-        padding: 40px 150px 90px;
+        padding: var(--team--padding);
 
         > * {
-            width: calc(50% - 125px);
+            width: var(--team--width);
         }
 
         .team-title {
-            font-size: 70px;
-            margin-bottom: 35px;
+            font-size: var(--font-size--heading_medium);
+            margin-bottom: var(--team-title--margin-bottom);
         }
     }
 

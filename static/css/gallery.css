@@ -1,11 +1,43 @@
 .gallery-section {
+    --gallery--padding: 40px 15px 25px;
+    --gallery--gap: 15px;
+    --gallery--direction: column;
+    --gallery-left--width: 100%;
+    --gallery-right--width: 100%;
+    --gallery-right--padding: 0;
+    --gallery-title--margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+        --gallery--padding: 55px 25px 25px;
+        --gallery--gap: 30px;
+        --gallery-title--margin-bottom: 60px;
+    }
+
+    @media (min-width: 1024px) {
+        --gallery--padding: 55px 40px 25px;
+        --gallery--gap: 45px;
+        --gallery--direction: row;
+        --gallery-left--width: calc(100% * 2 / 3 - var(--gallery--gap) / 2);
+        --gallery-right--width: calc(100% / 3 - var(--gallery--gap) / 2);
+    }
+
+    @media (min-width: 1440px) {
+        --gallery--padding: 65px 60px 25px;
+        --gallery--gap: 70px;
+        --gallery-right--padding: 60px 0;
+        --gallery-title--margin-bottom: 90px;
+    }
+}
+
+.gallery-section {
     background-color: rgba(0, 0, 0, 0.67);
     display: flex;
-    padding: 65px 60px 25px;
-    gap: 70px;
+    flex-direction: var(--gallery--direction);
+    padding: var(--gallery--padding);
+    gap: var(--gallery--gap);
 
     .gallery-left {
-        width: calc(100% * 2 / 3 - 35px);
+        width: var(--gallery-left--width);
 
         .slick-dots li button::before {
             color: #d9d9d9;
@@ -14,21 +46,21 @@
     }
 
     .gallery-right {
-        width: calc(100% / 3 - 35px);
-        padding: 60px 0;
+        width: var(--gallery-right--width);
+        padding: var(--gallery-right--padding);
 
         .gallery-title {
-            font-size: 44px;
-            margin-bottom: 90px;
+            font-size: var(--font-size--heading_small);
+            margin-bottom: var(--gallery-title--margin-bottom);
         }
 
         p {
-            font-size: 18px;
+            font-size: var(--font-size--text_small);
             margin-bottom: 15px;
         }
 
         .button {
-            margin-top: 90px;
+            margin-top: var(--gallery-title--margin-bottom);
         }
     }
 }

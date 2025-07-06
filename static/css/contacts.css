@@ -1,20 +1,54 @@
 .contacts-section {
-    padding: 75px 150px;
+    --contacts--padding: 30px 15px;
+    --contacts-title--margin-bottom: 30px;
+    --contacts-grid--gap: 15px;
+    --contacts-form--height: 60px;
+    --contacts-form-input--padding: 8px;
+    --contacts-form-button--padding: 8px 16px;
+    --contacts-icons--gap: 10px;
+
+    @media (min-width: 768px) {
+        --contacts--padding: 45px 25px;
+        --contacts-title--margin-bottom: 45px;
+        --contacts-grid--gap: 30px;
+        --contacts-form-input--padding: 12px;
+        --contacts-form-button--padding: 12px 22px;
+        --contacts-icons--gap: 22px;
+    }
+
+    @media (min-width: 1024px) {
+        --contacts--padding: 55px 50px;
+        --contacts-title--margin-bottom: 60px;
+        --contacts-grid--gap: 40px;
+        --contacts-form--height: 75px;
+        --contacts-form-input--padding: 17px;
+        --contacts-form-button--padding: 16px 25px;
+    }
+
+    @media (min-width: 1440px) {
+        --contacts--padding: 75px 150px;
+        --contacts-title--margin-bottom: 70px;
+    }
+}
+
+.contacts-section {
+    padding: var(--contacts--padding);
 
     .contacts-title {
-        font-size: 70px;
-        margin-bottom: 70px;
+        font-size: var(--font-size--heading_medium);
+        margin-bottom: var(--contacts-title--margin-bottom);
     }
 
     .contacts-grid {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 40px;
+        gap: var(--contacts-grid--gap);
     }
 
     .contact-block {
-        flex: 1 0 35%;
+        flex: 1 0 calc(35% - var(--contacts-grid--gap) / 2);
+        max-width: 100%;
         display: flex;
 
         &.numbers {
@@ -31,7 +65,7 @@
                 display: flex;
                 gap: 10px;
                 align-items: center;
-                font-size: 18px;
+                font-size: var(--font-size--text_small);
             }
 
             a:hover {
@@ -47,9 +81,10 @@
                 border: 1px solid rgba(255, 255, 255, 0.12);
                 border-radius: 16px;
                 padding: 5px;
-                height: 75px;
+                height: var(--contacts-form--height);
                 display: flex;
                 gap: 10px;
+                width: 100%;
 
                 input {
                     height: 100%;
@@ -59,8 +94,8 @@
                     background-color: transparent;
                     outline: none;
                     color: #fff;
-                    font-size: 22px;
-                    padding: 17px;
+                    font-size: var(--font-size--text_medium);
+                    padding: var(--contacts-form-input--padding);
 
                     &::placeholder {
                         color: #fff;
@@ -69,13 +104,13 @@
 
                 button {
                     height: 100%;
-                    padding: 16px 32px;
-                    flex: 0 0 150px;
+                    padding: var(--contacts-form-button--padding);
+                    width: 150px;
                     border-radius: 16px;
                     border: none;
                     background-color: #fff;
                     color: #000;
-                    font-size: 22px;
+                    font-size: var(--font-size--text_medium);
 
                     &:hover {
                         cursor: pointer;
@@ -86,14 +121,14 @@
 
         &.copyright {
             align-items: flex-end;
-            font-size: 19px;
+            font-size: var(--font-size--text_small);
             opacity: 32%;
         }
 
         &.social-icons {
             justify-content: flex-end;
             display: flex;
-            gap: 22px;
+            gap: var(--contacts-icons--gap);
             order: 4;
 
             a {
