@@ -45,6 +45,15 @@
                 font-size: var(--font-size--text_medium);
                 font-weight: 400;
                 gap: var(--header-nav--gap);
+
+                a {
+                    opacity: 0.5;
+                    transition: opacity 0.2s;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
             }
 
             &.language-links {
@@ -52,8 +61,18 @@
                 font-weight: 100;
                 gap: var(--header-lang--gap);
 
+                a {
+                    transition: font-weight 0.2s;
+                }
+
+                a:hover:not(.current) {
+                    font-weight: 300;
+                }
+
                 a.current {
                     font-weight: 400;
+                    cursor: default;
+                    touch-action: none;
                 }
             }
         }

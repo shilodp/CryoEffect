@@ -79,7 +79,14 @@
                 .icon {
                     display: block;
                     width: var(--banner-icon--size);
-                    height: auto;
+                    height: var(--banner-icon--size);
+                    color: #f3f3f3;
+                    transition: color 1s, transform 1s;
+                }
+
+                &:hover .icon {
+                    color: #c185c8;
+                    transform: scale(1.1);
                 }
             }
         }

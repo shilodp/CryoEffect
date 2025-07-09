@@ -63,7 +63,6 @@ body,
 html {
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
-    background: #000;
     color: #ffffff;
     font-size: var(--font-size--text_default);
 }
@@ -74,6 +73,52 @@ body {
         url("../../img/background/Clients.png");
     background-position: center top, center center, center bottom;
     background-repeat: no-repeat, no-repeat, no-repeat;
+    background-color: #000;
+
+    &.rtl {
+        background-color: transparent;
+        background-image: none;
+        position: relative;
+        z-index: 0;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            background-image: url("../../img/background/Banner.png"),
+                url("../../img/background/Gallery.png"),
+                url("../../img/background/Clients.png");
+            background-position: center top, center center, center bottom;
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-color: #000;
+            transform: scaleX(-1);
+        }
+
+        .gallery-section {
+            @media (min-width: 1024px) {
+                flex-direction: row-reverse;
+            }
+        }
+
+        .slick-prev {
+            left: unset !important;
+            right: 70px !important;
+        }
+
+        .slick-next {
+            left: 70px !important;
+            right: unset !important;
+        }
+
+        .number {
+            flex-direction: row-reverse !important;
+        }
+    }
 }
 
 a {
@@ -103,30 +148,10 @@ h3 {
     height: var(--button--height);
     width: auto;
     padding: var(--button--padding);
-}
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 
-.rtl {
-    .banner-content {
-        align-self: flex-end;
-    }
-
-    .gallery-section {
-        @media (min-width: 1024px) {
-            flex-direction: row-reverse;
-        }
-    }
-
-    .slick-prev {
-        left: unset !important;
-        right: 70px !important;
-    }
-
-    .slick-next {
-        left: 70px !important;
-        right: unset !important;
-    }
-
-    .number {
-        flex-direction: row-reverse !important;
+    &:hover {
+        background-color: #b9b8e5;
+        transform: scale(1.02);
     }
 }

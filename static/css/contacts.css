@@ -58,7 +58,7 @@
             .icon {
                 display: inline-block;
                 width: 32px;
-                height: auto;
+                height: 32px;
             }
 
             .number {
@@ -139,8 +139,11 @@
 
             .icon {
                 display: block;
-                width: 100%;
-                height: auto;
+                width: 54px;
+                height: 54px;
+                background-color: #f3f3f3;
+                border-radius: 50%;
+                color: #000;
             }
         }
     }
