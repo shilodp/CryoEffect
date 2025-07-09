@@ -7,11 +7,11 @@
     --about-title--margin-bottom: 20px;
     --contact--position: static;
     --contact-title--margin-bottom: 20px;
-    --contact--padding-top: 75px;
+    --contact-top: 75px;
 
     @media (min-width: 768px) {
         --about-contact--padding: 65px 20px 10px;
-        --contact--padding-top: 65px;
+        --contact--top: 65px;
     }
 
     @media (min-width: 1024px) {
@@ -23,7 +23,7 @@
         --about-title--margin-bottom: 30px;
         --contact--position: sticky;
         --contact-title--margin-bottom: 30px;
-        --contact--padding-top: 110px;
+        --contact--top: 110px;
     }
 
     @media (min-width: 1440px) {
@@ -63,10 +63,9 @@
     }
 
     .contact-form {
-        padding-top: var(--contact--padding-top);
         width: var(--about-contact--width);
         position: var(--contact--position);
-        top: 110px;
+        top: var(--contact--top);
         height: fit-content;
 
         .contact-title {
