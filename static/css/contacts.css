@@ -90,6 +90,7 @@
                 input {
                     height: 100%;
                     flex: 1 0 0;
+                    max-width: calc(100% - 160px);
                     border-radius: 16px;
                     border: none;
                     background-color: transparent;
