@@ -12,6 +12,11 @@
     --button--height: 49px;
     --button--padding: 15px;
 
+    --body--background-image: url("../../img/background/Banner.png"),
+        url("../../img/background/Gallery.png"),
+        url("../../img/background/Clients.png");
+    --body--background-position: 65% top, center center, center bottom;
+
     @media (min-width: 768px) {
         --font-size--heading_big: 48px;
         --font-size--heading_medium: 36px;
@@ -25,6 +30,8 @@
 
         --button--height: 69px;
         --button--padding: 25px;
+
+        --body--background-position: center top, center center, center bottom;
     }
 
     @media (min-width: 1024px) {
@@ -68,11 +75,9 @@ html {
 }
 
 body {
-    background-image: url("../../img/background/Banner.png"),
-        url("../../img/background/Gallery.png"),
-        url("../../img/background/Clients.png");
-    background-position: center top, center center, center bottom;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-image: var(--body--background-image);
+    background-position: var(--body--background-position);
+    background-repeat: no-repeat;
     background-color: #000;
 
     &.rtl {
@@ -90,11 +95,9 @@ body {
             bottom: 0;
             right: 0;
             z-index: -1;
-            background-image: url("../../img/background/Banner.png"),
-                url("../../img/background/Gallery.png"),
-                url("../../img/background/Clients.png");
-            background-position: center top, center center, center bottom;
-            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-image: var(--body--background-image);
+            background-position: var(--body--background-position);
+            background-repeat: no-repeat;
             background-color: #000;
             transform: scaleX(-1);
         }
