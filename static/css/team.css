@@ -1,16 +1,20 @@
 .our-team {
-    --team--padding: 30px 20px 40px;
+    --team--padding: 75px 20px 10px;
     --team--width: 100%;
     --team-title--margin-bottom: 25px;
 
+    @media (min-width: 768px) {
+        --team--padding: 65px 20px 10px;
+    }
+
     @media (min-width: 1024px) {
-        --team--padding: 30px 75px 50px;
+        --team--padding: 110px 75px 10px;
         --team--width: calc(50% - 50px);
         --team-title--margin-bottom: 35px;
     }
 
     @media (min-width: 1440px) {
-        --team--padding: 30px 150px 70px;
+        --team--padding: 110px 150px 10px;
         --team--width: calc(50% - 125px);
         --team-title--margin-bottom: 50px;
     }
@@ -28,6 +32,7 @@
 
         .team-title {
             font-size: var(--font-size--heading_medium);
+            line-height: var(--font-size--heading_medium);
             margin-bottom: var(--team-title--margin-bottom);
         }
     }

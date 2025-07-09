@@ -41,8 +41,8 @@
     }
 
     @media (min-width: 1440px) {
-        --font-size--heading_big: 116px;
-        --font-size--heading_medium: 70px;
+        --font-size--heading_big: 100px;
+        --font-size--heading_medium: 60px;
         --font-size--heading_small: 45px;
 
         --font-size--text_big: 30px;
@@ -153,5 +153,17 @@ h3 {
     &:hover {
         background-color: #b9b8e5;
         transform: scale(1.02);
+    }
+}
+
+@media (max-width: 1023px) {
+    .-desktop {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .-mobile {
+        display: none !important;
     }
 }

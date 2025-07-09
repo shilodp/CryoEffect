@@ -1,12 +1,10 @@
 .video-section {
     --video--padding: 15px;
     --video-title--margin-bottom: 25px;
-    --video-description--margin-bottom: 15px auto 30px;
 
     @media (min-width: 768px) {
         --video--padding: 25px;
         --video-title--margin-bottom: 35px;
-        --video-description--margin-bottom: 15px auto 50px;
     }
 
     @media (min-width: 1024px) {
@@ -21,18 +19,19 @@
 
     .video-title {
         font-size: var(--font-size--heading_medium);
+        line-height: var(--font-size--heading_medium);
         margin-bottom: var(--video-title--margin-bottom);
     }
 
     .video-player {
         display: block;
         width: 100%;
-        max-width: 1200px;
+        max-width: 1150px;
         height: auto;
         margin: 0 auto;
     }
 
     .video-description {
-        margin: var(--video-description--margin-bottom);
+        margin: 15px auto 10px;
     }
 }

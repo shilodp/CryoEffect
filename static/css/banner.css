@@ -1,5 +1,5 @@
 .main-banner {
-    --banner--padding: 115px 20px 30px;
+    --banner--padding: 85px 20px 10px;
     --banner-content--width: 100%;
     --banner-content--margin-bottom: 45px;
     --banner-title--margin-bottom: 15px;
@@ -11,7 +11,7 @@
     --banner-text--gap: 15px;
 
     @media (min-width: 768px) {
-        --banner--padding: 115px 40px 40px;
+        --banner--padding: 75px 40px 10px;
         --banner-content--width: 80%;
         --banner-content--margin-bottom: 65px;
         --banner-title--margin-bottom: 25px;
@@ -23,7 +23,7 @@
     }
 
     @media (min-width: 1024px) {
-        --banner--padding: 155px 60px 70px;
+        --banner--padding: 130px 60px 10px;
         --banner-content--width: 70%;
         --banner-content--margin-bottom: 80px;
         --banner-subtitle--margin-bottom: 55px;
@@ -33,7 +33,7 @@
     }
 
     @media (min-width: 1440px) {
-        --banner--padding: 205px 70px 90px;
+        --banner--padding: 130px 70px 10px;
         --banner-content--width: 50%;
         --banner-content--margin-bottom: 95px;
         --banner-title--margin-bottom: 30px;
@@ -52,6 +52,7 @@
 
         .page-title {
             font-size: var(--font-size--heading_big);
+            line-height: var(--font-size--heading_big);
             margin-bottom: var(--banner-title--margin-bottom);
         }
 

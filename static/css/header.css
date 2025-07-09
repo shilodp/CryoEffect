@@ -14,7 +14,7 @@
     }
 
     @media (min-width: 1024px) {
-        --header--padding: 45px;
+        --header--padding: 40px;
         --header--gap: 50px;
         --header-nav--gap: 75px;
     }

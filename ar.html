@@ -102,7 +102,7 @@
             <h2 class="video-title">اكتشف بنفسك</h2>
             <video
                 controls
-                src="video.mp4"
+                src="video/video-gallery.mp4"
                 poster="img/video/Poster.png"
                 class="video-player"
             ></video>
@@ -114,19 +114,34 @@
 
         <!-- Галерея -->
         <section id="gallery" class="gallery-section">
+            <h2 class="gallery-title -mobile">معرض التجارب</h2>
             <div class="gallery-left">
                 <!-- Галерея с точками навигации -->
                 <div class="gallery-slider slick-slider" dir="ltr">
-                    <img src="img/gallery/Gallery.png" alt="Gallery 1" />
-                    <img src="img/gallery/Gallery.png" alt="Gallery 2" />
-                    <img src="img/gallery/Gallery.png" alt="Gallery 3" />
-                    <img src="img/gallery/Gallery.png" alt="Gallery 4" />
-                    <img src="img/gallery/Gallery.png" alt="Gallery 5" />
-                    <img src="img/gallery/Gallery.png" alt="Gallery 6" />
+                    <img src="img/gallery/Gallery 1.jpg" alt="Gallery 1" />
+                    <img src="img/gallery/Gallery 2.jpg" alt="Gallery 2" />
+                    <img src="img/gallery/Gallery 3.jpg" alt="Gallery 3" />
+                    <img src="img/gallery/Gallery 4.jpg" alt="Gallery 4" />
+                    <img src="img/gallery/Gallery 5.jpg" alt="Gallery 5" />
+                    <img src="img/gallery/Gallery 6.jpg" alt="Gallery 6" />
+                    <img src="img/gallery/Gallery 7.jpg" alt="Gallery 7" />
+                    <img src="img/gallery/Gallery 8.jpg" alt="Gallery 8" />
+                    <img src="img/gallery/Gallery 9.jpg" alt="Gallery 9" />
+                    <img src="img/gallery/Gallery 10.JPG" alt="Gallery 10" />
+                    <img src="img/gallery/Gallery 11.JPG" alt="Gallery 11" />
+                    <img src="img/gallery/Gallery 12.JPG" alt="Gallery 12" />
+                    <img src="img/gallery/Gallery 13.JPG" alt="Gallery 13" />
+                    <img src="img/gallery/Gallery 14.JPG" alt="Gallery 14" />
+                    <img src="img/gallery/Gallery 15.jpg" alt="Gallery 15" />
+                    <img src="img/gallery/Gallery 16.jpg" alt="Gallery 16" />
+                    <img src="img/gallery/Gallery 17.jpg" alt="Gallery 17" />
+                    <img src="img/gallery/Gallery 18.jpg" alt="Gallery 18" />
+                    <img src="img/gallery/Gallery 19.jpg" alt="Gallery 19" />
+                    <img src="img/gallery/Gallery 20.png" alt="Gallery 20" />
                 </div>
             </div>
             <div class="gallery-right">
-                <h2 class="gallery-title">معرض التجارب</h2>
+                <h2 class="gallery-title -desktop">معرض التجارب</h2>
                 <p>
                     لقد نفذنا مشاريع في الإمارات العربية المتحدة، الصين، بولندا،
                     روسيا، ألمانيا، إيطاليا، كازاخستان، أرمينيا وأكثر من ٣٠
@@ -236,9 +251,8 @@
                             <a
                                 class="link"
                                 href="https://www.chemistryworld.com/careers/the-stunt-show/1010031.article"
-                            >
-                                الجمعية الملكية للكيمياء،
-                            </a>
+                                >الجمعية الملكية للكيمياء،</a
+                            >,
                             <span class="country">المملكة المتحدة</span>
                         </p>
                     </div>
@@ -260,9 +274,8 @@
                             <a
                                 class="link"
                                 href="https://tularasaakademie.wordpress.com/2015/07/20/artnauka-physics-of-the-impossible/"
-                            >
-                                Tularasa Akademie,
-                            </a>
+                                >Tularasa Akademie</a
+                            >,
                             <span class="country">إندونيسيا</span>
                         </p>
                     </div>
@@ -278,8 +291,9 @@
                         الجمهور بطريقة لا توصف.
                     </p>
                     <div class="author">
-                        <p class="name">Visit Quatar</p>
+                        <p class="name"></p>
                         <p class="company">
+                            Visit Quatar
                             <a class="link" href=""></a>
                             <span class="country"></span>
                         </p>
@@ -301,10 +315,8 @@
                             <a
                                 class="link"
                                 href="https://www.2plan22.com/2016/06/artnauka-art-through-chemistry-blouin-artinfo.html"
-                            >
-                                Plan22 Archibrarians,
-                            </a>
-                            <span class="country">أمريكا</span>
+                                >Plan22 Archibrarians</a
+                            >, <span class="country">أمريكا</span>
                         </p>
                     </div>
                 </div>
@@ -312,8 +324,8 @@
         </section>
 
         <!-- Блок о нас / Связаться с нами -->
-        <section class="about-contact">
-            <div id="about-us" class="about-text">
+        <section id="about-us" class="about-contact">
+            <div class="about-text">
                 <h2 class="about-title">من نحن</h2>
                 <p>
                     تأسست ArtNauka في عام ٢٠١٠ استجابةً للطلب المتزايد على
@@ -360,7 +372,7 @@
                                 type="text"
                                 id="firstname"
                                 name="firstname"
-                                placeholder="اتصل بنا"
+                                placeholder="اسمك"
                                 required
                             />
                         </div>
@@ -374,7 +386,7 @@
                                 type="text"
                                 id="surname"
                                 name="surname"
-                                placeholder="اللقب"
+                                placeholder="اسم العائلة"
                                 required
                             />
                         </div>
@@ -388,7 +400,7 @@
                                 type="email"
                                 id="email"
                                 name="email"
-                                placeholder="البريد الإلكتروني"
+                                placeholder="بريدك الإلكتروني"
                                 required
                             />
                         </div>
@@ -401,7 +413,6 @@
                             <textarea
                                 id="message"
                                 name="message"
-                                placeholder="الرسالة"
                                 required
                             ></textarea>
                         </div>
@@ -423,28 +434,64 @@
             </div>
             <div class="team-slider slick-slider" dir="ltr">
                 <div class="team-member">
-                    <img src="img/team/team 1.png" alt="Team member 1" />
+                    <img src="img/team/team 1.jpg" alt="Team member 1" />
                 </div>
                 <div class="team-member">
-                    <img src="img/team/team 2.png" alt="Team member 2" />
+                    <img src="img/team/team 2.jpg" alt="Team member 2" />
                 </div>
                 <div class="team-member">
-                    <img src="img/team/team 3.png" alt="Team member 3" />
+                    <img src="img/team/team 3.jpg" alt="Team member 3" />
                 </div>
                 <div class="team-member">
-                    <img src="img/team/team 4.png" alt="Team member 4" />
+                    <img src="img/team/team 4.jpg" alt="Team member 4" />
                 </div>
                 <div class="team-member">
-                    <img src="img/team/team 5.png" alt="Team member 5" />
+                    <img src="img/team/team 5.jpg" alt="Team member 5" />
                 </div>
                 <div class="team-member">
-                    <img src="img/team/team 6.png" alt="Team member 6" />
+                    <img src="img/team/team 6.jpg" alt="Team member 6" />
                 </div>
                 <div class="team-member">
-                    <img src="img/team/team 7.png" alt="Team member 7" />
+                    <img src="img/team/team 7.jpg" alt="Team member 7" />
                 </div>
                 <div class="team-member">
-                    <img src="img/team/team 8.png" alt="Team member 8" />
+                    <img src="img/team/team 8.jpg" alt="Team member 8" />
+                </div>
+                <div class="team-member">
+                    <img src="img/team/team 9.jpg" alt="Team member 9" />
+                </div>
+                <div class="team-member">
+                    <img src="img/team/team 10.jpg" alt="Team member 10" />
+                </div>
+                <div class="team-member">
+                    <img src="img/team/team 11.jpg" alt="Team member 11" />
+                </div>
+                <div class="team-member">
+                    <img src="img/team/team 12.jpg" alt="Team member 12" />
+                </div>
+                <div class="team-member">
+                    <img src="img/team/team 13.jpg" alt="Team member 13" />
+                </div>
+                <div class="team-member">
+                    <img src="img/team/team 14.jpg" alt="Team member 14" />
+                </div>
+                <div class="team-member">
+                    <img src="img/team/team 15.jpg" alt="Team member 15" />
+                </div>
+                <div class="team-member">
+                    <img src="img/team/team 16.jpg" alt="Team member 16" />
+                </div>
+                <div class="team-member">
+                    <img src="img/team/team 17.jpg" alt="Team member 17" />
+                </div>
+                <div class="team-member">
+                    <img src="img/team/team 18.jpg" alt="Team member 18" />
+                </div>
+                <div class="team-member">
+                    <img src="img/team/team 19.jpg" alt="Team member 19" />
+                </div>
+                <div class="team-member">
+                    <img src="img/team/team 20.jpg" alt="Team member 20" />
                 </div>
             </div>
         </section>
@@ -469,7 +516,7 @@
                             </svg>
                         </a>
                         <a target="_blank" href="tel:+79852921122"
-                            >+79852921122</a
+                            >+7 985 292 11 22</a
                         >
                     </div>
                     <div class="number" dir="ltr">
@@ -487,7 +534,7 @@
                             </svg>
                         </a>
                         <a target="_blank" href="tel:+79261745925"
-                            >+79261745925</a
+                            >+7 926 174 59 25</a
                         >
                     </div>
                 </div>

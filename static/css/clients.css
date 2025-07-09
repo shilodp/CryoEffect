@@ -1,5 +1,6 @@
 .clients-section {
-    --clients--padding: 30px 15px;
+    --clients--padding: 75px 15px 10px;
+    --clients-title--margin-bottom: 20px;
     --clients-grid--gap: 15px;
     --clients-grid--margin-bottom: 50px;
     --clients-icon--width: calc(100% / 4 - var(--clients-grid--gap) * 3 / 4);
@@ -7,7 +8,7 @@
     --clients-review--padding: 45px 0 30px;
 
     @media (min-width: 768px) {
-        --clients--padding: 45px 25px;
+        --clients--padding: 65px 25px 10px;
         --clients-title--margin-bottom: 30px;
         --clients-grid--gap: 25px;
         --clients-icon--width: calc(
@@ -17,14 +18,14 @@
     }
 
     @media (min-width: 1024px) {
-        --clients--padding: 70px 50px;
+        --clients--padding: 110px 50px 10px;
         --clients-title--margin-bottom: 45px;
         --clients-grid--gap: 30px;
     }
 
     @media (min-width: 1440px) {
-        --clients--padding: 95px 150px;
-        --clients-review--padding: 45px 40px 30px;
+        --clients--padding: 110px 150px 10px;
+        --clients-review--padding: 40px;
     }
 }
 
@@ -34,6 +35,7 @@
 
     .clients-title {
         font-size: var(--font-size--heading_medium);
+        line-height: var(--font-size--heading_medium);
         margin-bottom: var(--clients-title--margin-bottom);
     }
 
