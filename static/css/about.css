@@ -6,31 +6,45 @@
     --about-title--margin-top: 25px;
     --about-title--margin-bottom: 20px;
     --contact--position: static;
+    --contact-title--margin-top: 20px;
     --contact-title--margin-bottom: 20px;
-    --contact-top: 75px;
+    --contact--top: unset;
 
     @media (min-width: 768px) {
         --about-contact--padding: 65px 20px 10px;
-        --contact--top: 65px;
     }
 
     @media (min-width: 1024px) {
         --about-contact--diraction: row;
-        --about-contact--gap: 100px;
-        --about-contact--padding: 110px 75px 10px;
-        --about-contact--width: calc(50% - var(--about-contact--gap) / 2);
-        --about-title--margin-top: 35px;
-        --about-title--margin-bottom: 30px;
         --contact--position: sticky;
-        --contact-title--margin-bottom: 30px;
-        --contact--top: 110px;
+        --about-contact--gap: 166px;
+        --about-contact--width: calc(50% - var(--about-contact--gap) / 2);
+        --about-contact--padding: 36px 102px 20px;
+        --about-title--margin-top: 60px;
+        --about-title--margin-bottom: 36px;
+        --contact-title--margin-top: 25px;
+        --contact-title--margin-bottom: 22px;
+        --contact--top: 53px;
     }
 
     @media (min-width: 1440px) {
+        --about-contact--gap: 188px;
+        --about-contact--padding: 41px 116px 23px;
+        --about-title--margin-top: 68px;
+        --about-title--margin-bottom: 41px;
+        --contact-title--margin-top: 29px;
+        --contact-title--margin-bottom: 25px;
+        --contact--top: 60px;
+    }
+
+    @media (min-width: 1920px) {
         --about-contact--gap: 250px;
-        --about-contact--padding: 110px 150px 10px;
-        --about-title--margin-top: 50px;
-        --about-title--margin-bottom: 40px;
+        --about-contact--padding: 55px 155px 30px;
+        --about-title--margin-top: 90px;
+        --about-title--margin-bottom: 55px;
+        --contact-title--margin-top: 38px;
+        --contact-title--margin-bottom: 33px;
+        --contact--top: 80px;
     }
 }
 
@@ -71,6 +85,7 @@
         .contact-title {
             font-size: var(--font-size--heading_small);
             line-height: var(--font-size--heading_small);
+            margin-top: var(--contact-title--margin-top);
             margin-bottom: var(--contact-title--margin-bottom);
         }
 
