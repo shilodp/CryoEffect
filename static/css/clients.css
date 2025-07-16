@@ -1,31 +1,49 @@
 .clients-section {
     --clients--padding: 75px 15px 10px;
     --clients-title--margin-bottom: 20px;
-    --clients-grid--gap: 15px;
+    --clients-grid--gap-row: 15px;
+    --clients-grid--gap-column: 15px;
     --clients-grid--margin-bottom: 50px;
-    --clients-icon--width: calc(100% / 4 - var(--clients-grid--gap) * 3 / 4);
-    --clients-review--width: 100%;
-    --clients-review--padding: 45px 0 30px;
+    --clients-icon--amount: 3;
+    --clients-icon--width: calc(
+        100% / var(--clients-icon--amount) - var(--clients-grid--gap-column) *
+            (var(--clients-icon--amount) - 1) / var(--clients-icon--amount)
+    );
+    --clients-review--grid-template-columns: 100%;
+    --clients-review--padding: 80px 0 30px;
 
     @media (min-width: 768px) {
-        --clients--padding: 65px 25px 10px;
+        --clients--padding: 65px 48px 10px;
         --clients-title--margin-bottom: 30px;
-        --clients-grid--gap: 25px;
-        --clients-icon--width: calc(
-            100% / 5 - var(--clients-grid--gap) * 4 / 5
-        );
-        --clients-review--width: calc(50% - 15px);
+        --clients-grid--gap-row: 35px;
+        --clients-grid--gap-column: 25px;
+        --clients-icon--amount: 4;
+        --clients-review--grid-template-columns: 1fr 1fr;
     }
 
     @media (min-width: 1024px) {
-        --clients--padding: 110px 50px 10px;
-        --clients-title--margin-bottom: 45px;
-        --clients-grid--gap: 30px;
+        --clients-icon--amount: 5;
+        --clients--padding: 61px 79px 30px;
+        --clients-grid--gap-row: 30px;
+        --clients-grid--gap-column: 60px;
+        --clients-grid--margin-bottom: 57px;
+        --clients-review--padding: 80px 20px 45px;
     }
 
     @media (min-width: 1440px) {
-        --clients--padding: 110px 150px 10px;
-        --clients-review--padding: 40px;
+        --clients--padding: 69px 90px 34px;
+        --clients-title--margin-bottom: 34px;
+        --clients-grid--gap-row: 34px;
+        --clients-grid--gap-column: 68px;
+        --clients-grid--margin-bottom: 65px;
+    }
+
+    @media (min-width: 1920px) {
+        --clients--padding: 92px 120px 45px;
+        --clients-title--margin-bottom: 45px;
+        --clients-grid--gap-row: 45px;
+        --clients-grid--gap-column: 90px;
+        --clients-grid--margin-bottom: 87px;
     }
 }
 
@@ -44,7 +62,8 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
-        gap: var(--clients-grid--gap);
+        row-gap: var(--clients-grid--gap-row);
+        column-gap: var(--clients-grid--gap-column);
         margin-bottom: 90px;
 
         .logo {
@@ -61,17 +80,23 @@
     }
 
     .reviews-wrapper {
-        display: flex;
-        gap: 60px 30px;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: var(--clients-review--grid-template-columns);
+        justify-items: center;
+        gap: 30px 60px;
         justify-content: space-evenly;
 
         .review {
             border-radius: 28px;
             background-image: radial-gradient(black, transparent);
-            width: var(--clients-review--width);
+            max-width: 450px;
             padding: var(--clients-review--padding);
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
             .img {
                 width: 60px;
@@ -80,7 +105,7 @@
                 position: absolute;
                 top: 0;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translateX(-50%);
             }
 
             .quotte {
