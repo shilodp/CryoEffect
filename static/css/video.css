@@ -1,6 +1,7 @@
 .video-section {
     --video--padding: 15px;
     --video-title--margin-bottom: 25px;
+    --video-title--max-width: unset;
 
     @media (min-width: 768px) {
         --video--padding: 25px;
@@ -8,8 +9,21 @@
     }
 
     @media (min-width: 1024px) {
-        --video--padding: 35px;
+        --video--padding: 30px 102px;
+        --video-title--margin-bottom: 30px;
+        --video-title--max-width: 779px;
+    }
+
+    @media (min-width: 1440px) {
+        --video--padding: 34px 116px;
+        --video-title--margin-bottom: 34px;
+        --video-title--max-width: 885px;
+    }
+
+    @media (min-width: 1920px) {
+        --video--padding: 45px 155px;
         --video-title--margin-bottom: 45px;
+        --video-title--max-width: 1180;
     }
 }
 
@@ -26,7 +40,7 @@
     .video-player {
         display: block;
         width: 100%;
-        max-width: 1150px;
+        max-width: var(--video-title--max-width);
         height: auto;
         margin: 0 auto;
     }
