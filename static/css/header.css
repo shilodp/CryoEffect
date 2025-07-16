@@ -14,9 +14,23 @@
     }
 
     @media (min-width: 1024px) {
-        --header--padding: 40px;
+        --header--padding: 30px;
+        --header--gap: 33px;
+        --header-nav--gap: 50px;
+        --header-lang--gap: 10px;
+    }
+
+    @media (min-width: 1440px) {
+        --header--padding: 34px;
+        --header--gap: 38px;
+        --header-nav--gap: 56px;
+    }
+
+    @media (min-width: 1920px) {
+        --header--padding: 45px;
         --header--gap: 50px;
         --header-nav--gap: 75px;
+        --header-lang--gap: 15px;
     }
 }
 

@@ -5,7 +5,11 @@
     --banner-title--margin-bottom: 15px;
     --banner-subtitle--margin-bottom: 25px;
     --banner-grid--gap: 20px;
-    --banner-icon--width: calc(50% - var(--banner-grid--gap) / 2);
+    --banner-icon--amount: 2;
+    --banner-icon--width: calc(
+        100% / var(--banner-icon--amount) - var(--banner-grid--gap) *
+            (var(--banner-icon--amount) - 1) / var(--banner-icon--amount)
+    );
     --banner-icon--gap: 15px;
     --banner-icon--size: 44px;
     --banner-text--gap: 15px;
@@ -17,7 +21,7 @@
         --banner-title--margin-bottom: 25px;
         --banner-subtitle--margin-bottom: 35px;
         --banner-grid--gap: 30px;
-        --banner-icon--width: calc(100% / 3 - var(--banner-grid--gap) * 2 / 3);
+        --banner-icon--amount: 3;
         --banner-icon--gap: 20px;
         --banner-icon--size: 54px;
     }
@@ -26,7 +30,6 @@
         --banner--padding: 135px 102px 30px;
         --banner-content--margin-bottom: 63px;
         --banner-content--width: 50%;
-        --banner-icon--width: calc(100% / 3 - var(--banner-grid--gap) * 2 / 3);
         --banner-title--margin-bottom: 20px;
         --banner-subtitle--margin-bottom: 36px;
         --banner-grid--gap: 35px;
