@@ -1,33 +1,48 @@
 .contacts-section {
-    --contacts--padding: 75px 15px 10px;
+    --contacts--padding: 75px 15px 50px;
     --contacts-title--margin-bottom: 30px;
     --contacts-grid--gap: 15px;
     --contacts-form--height: 60px;
     --contacts-form-input--padding: 8px;
     --contacts-form-button--padding: 8px 16px;
     --contacts-icons--gap: 10px;
+    --contacts-icons--size: 36px;
 
     @media (min-width: 768px) {
-        --contacts--padding: 65px 10px;
+        --contacts--padding: 65px 20px;
         --contacts-title--margin-bottom: 45px;
         --contacts-grid--gap: 30px;
         --contacts-form-input--padding: 12px;
-        --contacts-form-button--padding: 12px 22px;
-        --contacts-icons--gap: 22px;
+        --contacts-form-button--padding: 11px 17px;
+        --contacts-icons--gap: 12px;
     }
 
     @media (min-width: 1024px) {
-        --contacts--padding: 110px 50px 10px;
-        --contacts-title--margin-bottom: 60px;
-        --contacts-grid--gap: 40px;
-        --contacts-form--height: 75px;
-        --contacts-form-input--padding: 17px;
-        --contacts-form-button--padding: 16px 25px;
+        --contacts--padding: 50px 122px;
+        --contacts-title--margin-bottom: 50px;
+        --contacts-grid--gap: 26px;
+        --contacts-form-input--padding: 11px;
+        --contacts-icons--gap: 15px;
     }
 
     @media (min-width: 1440px) {
-        --contacts--padding: 110px 150px 10px;
-        --contacts-title--margin-bottom: 70px;
+        --contacts--padding: 56px 139px;
+        --contacts-title--margin-bottom: 56px;
+        --contacts-grid--gap: 30px;
+        --contacts-form--height: 75px;
+        --contacts-form-input--padding: 13px;
+        --contacts-form-button--padding: 12px 19px;
+        --contacts-icons--gap: 41px;
+    }
+
+    @media (min-width: 1920px) {
+        --contacts--padding: 75px 185px;
+        --contacts-title--margin-bottom: 75px;
+        --contacts-grid--gap: 40px;
+        --contacts-form-input--padding: 17px;
+        --contacts-form-button--padding: 16px 25px;
+        --contacts-icons--gap: 22px;
+        --contacts-icons--size: 54px;
     }
 }
 
@@ -49,7 +64,7 @@
 
     .contact-block {
         flex: 1 0 calc(35% - var(--contacts-grid--gap) / 2);
-        max-width: 100%;
+        max-width: 480px;
         display: flex;
 
         &.numbers {
@@ -128,21 +143,19 @@
         }
 
         &.social-icons {
-            justify-content: flex-end;
             display: flex;
             gap: var(--contacts-icons--gap);
-            order: 4;
 
             a {
                 display: inline-block;
-                width: 54px;
-                height: 54px;
+                width: var(--contacts-icons--size);
+                height: var(--contacts-icons--size);
             }
 
             .icon {
                 display: block;
-                width: 54px;
-                height: 54px;
+                width: 100%;
+                height: 100%;
                 background-color: #f3f3f3;
                 border-radius: 50%;
                 color: #000;
