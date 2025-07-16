@@ -15,7 +15,8 @@
     --body--background-image: url("../../img/background/Banner.png"),
         url("../../img/background/Gallery.png"),
         url("../../img/background/Clients.png");
-    --body--background-position: 65% top, center center, center bottom;
+    --body--background-position: 65% top, center 20%, center center;
+    --body--background-size: auto;
 
     @media (min-width: 768px) {
         --font-size--heading_big: 48px;
@@ -31,29 +32,52 @@
         --button--height: 69px;
         --button--padding: 25px;
 
-        --body--background-position: center top, center center, center bottom;
+        --body--background-position: center top, center 20%, center center;
+        --body--background-size: 150vw;
     }
 
     @media (min-width: 1024px) {
-        --font-size--heading_big: 80px;
-        --font-size--heading_medium: 45px;
-        --font-size--heading_small: 38px;
+        --font-size--heading_big: 77px;
+        --font-size--heading_medium: 46px;
+        --font-size--heading_small: 22px;
 
-        --font-size--text_big: 26px;
-        --font-size--text_medium: 22px;
-        --font-size--text_small: 18px;
+        --font-size--text_big: 18px;
+        --font-size--text_medium: 16px;
+        --font-size--text_small: 12px;
 
-        --button--height: 70px;
-        --button--padding: 25px 30px;
+        --font-size--text_default: 10px;
+
+        --button--height: 66px;
+        --button--padding: 20px;
+
+        --body--background-size: 100vw;
     }
 
     @media (min-width: 1440px) {
-        --font-size--heading_big: 100px;
-        --font-size--heading_medium: 60px;
-        --font-size--heading_small: 45px;
+        --font-size--heading_big: 87px;
+        --font-size--heading_medium: 53px;
+        --font-size--heading_small: 30px;
 
-        --font-size--text_big: 30px;
+        --font-size--text_big: 21px;
+        --font-size--text_medium: 18px;
+        --font-size--text_small: 14px;
+
+        --font-size--text_default: 14px;
+
+        --button--height: 75px;
+        --button--padding: 23px;
+    }
+
+    @media (min-width: 1920px) {
+        --font-size--heading_big: 116px;
+        --font-size--heading_medium: 70px;
+        --font-size--heading_small: 40px;
+
+        --font-size--text_big: 28px;
         --font-size--text_medium: 24px;
+        --font-size--text_small: 18px;
+
+        --font-size--text_default: 14px;
 
         --button--height: 99px;
         --button--padding: 30px;
@@ -77,6 +101,7 @@ html {
 body {
     background-image: var(--body--background-image);
     background-position: var(--body--background-position);
+    background-size: var(--body--background-size);
     background-repeat: no-repeat;
     background-color: #000;
 
@@ -97,6 +122,7 @@ body {
             z-index: -1;
             background-image: var(--body--background-image);
             background-position: var(--body--background-position);
+            background-size: var(--body--background-size);
             background-repeat: no-repeat;
             background-color: #000;
             transform: scaleX(-1);
