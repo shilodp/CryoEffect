@@ -32,7 +32,8 @@
         --contacts-form--height: 75px;
         --contacts-form-input--padding: 13px;
         --contacts-form-button--padding: 12px 19px;
-        --contacts-icons--gap: 41px;
+        --contacts-icons--gap: 17px;
+        --contacts-icons--size: 41px;
     }
 
     @media (min-width: 1920px) {
