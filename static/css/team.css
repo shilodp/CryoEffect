@@ -4,17 +4,23 @@
     --team-title--margin-bottom: 25px;
 
     @media (min-width: 768px) {
-        --team--padding: 65px 20px 10px;
+        --team--padding: 65px 20px 20px;
     }
 
     @media (min-width: 1024px) {
-        --team--padding: 110px 75px 10px;
-        --team--width: calc(50% - 50px);
-        --team-title--margin-bottom: 35px;
+        --team--padding: 30px 102px 69px;
+        --team--width: calc(50% - 83px);
+        --team-title--margin-bottom: 33px;
     }
 
     @media (min-width: 1440px) {
-        --team--padding: 110px 150px 10px;
+        --team--padding: 34px 116px 79px;
+        --team--width: calc(50% - 94px);
+        --team-title--margin-bottom: 38px;
+    }
+
+    @media (min-width: 1920px) {
+        --team--padding: 45px 155px 105px;
         --team--width: calc(50% - 125px);
         --team-title--margin-bottom: 50px;
     }
