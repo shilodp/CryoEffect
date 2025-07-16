@@ -85,6 +85,7 @@
 
             .quotte {
                 font-size: var(--font-size--text_big);
+                font-style: italic;
                 margin-bottom: 25px;
             }
 
