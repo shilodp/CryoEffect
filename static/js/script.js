@@ -26,9 +26,13 @@ $(".team-slider").slick({
 
 $(document.forms["contact-us"]).submit((e) => {
     e.preventDefault();
-    const token = grecaptcha.getResponse();
-
-    if (token) {
-        console.log('success')
+    if (grecaptcha) {
+        const token = grecaptcha.getResponse();
+    
+        if (token) {
+            console.log("success 1");
+        }
+    } else {
+        console.log("success 2");
     }
 });
