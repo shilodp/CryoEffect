@@ -23,6 +23,7 @@
             type="text/javascript"
             src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
         ></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
         <script defer src="static/js/script.js"></script>
     </head>
@@ -417,6 +418,11 @@
                             ></textarea>
                         </div>
                     </div>
+                    <div class="g-recaptcha"
+                         data-sitekey="6LcQp4YrAAAAANi5Q37_ShGBakAx3JpBMnkoFGMk"
+                         data-callback="onCaptchaSuccess"
+                         data-expired-callback="onCaptchaExpired"
+                         data-error-callback="onCaptchaError"></div>
                     <button class="submit" type="submit">إرسال</button>
                 </form>
             </div>
