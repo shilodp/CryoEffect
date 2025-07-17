@@ -23,3 +23,12 @@ $(".team-slider").slick({
     variableWidth: true,
     centerMode: true,
 });
+
+$(document.forms["contact-us"]).submit((e) => {
+    e.preventDefault();
+    const token = grecaptcha.getResponse();
+
+    if (token) {
+        console.log('success')
+    }
+});
